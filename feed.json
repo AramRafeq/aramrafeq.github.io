@@ -2,16 +2,16 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Personal Blog",
     "description": "",
-    "home_page_url": "http://aram.dev",
-    "feed_url": "http://aram.dev/feed.json",
+    "home_page_url": "https://aram.dev",
+    "feed_url": "https://aram.dev/feed.json",
     "user_comment": "",
     "author": {
         "name": "Aram Rafeq"
     },
     "items": [
         {
-            "id": "http://aram.dev/hello-world-pubils-is-awesome.html",
-            "url": "http://aram.dev/hello-world-pubils-is-awesome.html",
+            "id": "https://aram.dev/hello-world-pubils-is-awesome.html",
+            "url": "https://aram.dev/hello-world-pubils-is-awesome.html",
             "title": "Hello World Pubils Is Awesome",
             "author": {
                 "name": "Aram Rafeq"

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Personal Blog</title>
-    <link href="http://aram.dev/feed.xml" rel="self" />
-    <link href="http://aram.dev" />
-    <updated>2019-08-19T14:28:21+03:00</updated>
+    <link href="https://aram.dev/feed.xml" rel="self" />
+    <link href="https://aram.dev" />
+    <updated>2019-08-19T14:29:51+03:00</updated>
     <author>
         <name>Aram Rafeq</name>
     </author>
-    <id>http://aram.dev</id>
+    <id>https://aram.dev</id>
 
     <entry>
         <title>Hello World Pubils Is Awesome</title>
         <author>
             <name>Aram Rafeq</name>
         </author>
-        <link href="http://aram.dev/hello-world-pubils-is-awesome.html"/>
-        <id>http://aram.dev/hello-world-pubils-is-awesome.html</id>
+        <link href="https://aram.dev/hello-world-pubils-is-awesome.html"/>
+        <id>https://aram.dev/hello-world-pubils-is-awesome.html</id>
 
         <updated>2019-08-19T14:26:57+03:00</updated>
             <summary></summary>

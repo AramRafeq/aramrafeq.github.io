@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://aram.dev/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://aram.dev/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>http://aram.dev/</loc>
+<loc>https://aram.dev/</loc>
 </url>
 <url>
-<loc>http://aram.dev/hello-world-pubils-is-awesome.html</loc>
+<loc>https://aram.dev/hello-world-pubils-is-awesome.html</loc>
 <lastmod>2019-08-19T14:26:57+03:00</lastmod>
 </url>
 </urlset>
