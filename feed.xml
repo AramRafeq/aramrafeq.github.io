@@ -3,10 +3,89 @@
     <title>Personal Blog</title>
     <link href="https://aram.dev/feed.xml" rel="self" />
     <link href="https://aram.dev" />
-    <updated>1970-01-01T03:00:00+03:00</updated>
+    <updated>2019-08-21T09:07:15+03:00</updated>
     <author>
         <name>Aram Rafeq</name>
     </author>
     <id>https://aram.dev</id>
 
+    <entry>
+        <title>Readme.md</title>
+        <author>
+            <name>Aram Rafeq</name>
+        </author>
+        <link href="https://aram.dev/readmemd-2.html"/>
+        <id>https://aram.dev/readmemd-2.html</id>
+
+        <updated>2019-08-21T09:07:10+03:00</updated>
+            <summary>
+                <![CDATA[
+                    inventory-databasechawilka inventory system table names are named in the following rules every resoure in resource table should be singuler small case and if a resource is sub resource like contact person which is part of contact resource it shoule be written in full path up&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="mcetoc_1dipcidvv0">inventory-database</h1>
+<p>chawilka inventory system</p>
+<h2 id="mcetoc_1dipcidvv1"> </h2>
+<h2 id="mcetoc_1dipcidvv2">tables</h2>
+<p>table names are named in the following rules</p>
+<ol>
+<li>singuler names for example instead of <code>items</code> it should be <code>item</code></li>
+<li>whenever a table name contains more than one word for example <code> inventory tratnsactions</code> it should be written in <code>snake case</code> like that <code>inventory_transaction</code></li>
+</ol>
+<h2 id="mcetoc_1dipcidvv3"> </h2>
+<h2 id="mcetoc_1dipcidvv4">columns</h2>
+<ol>
+<li>all column names must be singuler names</li>
+<li>column names must not contain table names for example <code>item_name</code> should be <code>name</code></li>
+<li>all <code>enum</code> columns must be in <code>small case</code> and <code>snake_case</code></li>
+<li>every status column is assigned type of <code>tinyint [0,1]</code></li>
+<li>there should be no null values in number type columns instead if there is no value it should be <code>-1</code></li>
+<li><code>forigen key</code> should be prefexied with table name exactly for example <code>id</code> for an item should be <code>item_id</code> when it become forigen key</li>
+</ol>
+<h2 id="mcetoc_1dipcidvv5"> </h2>
+<h2 id="mcetoc_1dipcidvv6">resources</h2>
+<p>every resoure in <code>resource</code> table should be singuler small case and if a resource is sub resource like <code>contact person</code> which is part of <code>contact</code> resource it shoule be written in full path up untill it reachs the resource for example if we want to make permession on <code>contact person phone number</code> it should be written like <code>contact.person.phone</code> be aware you should do this nesting if and only if the subresource is physicaly linked and cannot be seperated like a field on a form or dynamic list whcih can be added to some resoure and not logicaly like <code>inventory.item</code> item is an item and doesnt have anything to do with inventory this strategy prevents conflicts.</p>
+<h1 id="mcetoc_1dipcidvv7"> </h1>
+<h1 id="mcetoc_1dipcidvv8">API / UI</h1>
+<h2 id="mcetoc_1dipcidvv9"> </h2>
+<h2 id="mcetoc_1dipcidvva">filenames</h2>
+<p>files are named in <code>camelCase</code> and singuler like tablenames</p>
+<h2 id="mcetoc_1dipcidvvb"> </h2>
+<h2 id="mcetoc_1dipcidvvc">queries folder</h2>
+<p>inside <code>queries</code> folder we have another sub folder called <code>base</code> which means base queries</p>
+<h2 id="mcetoc_1dipcidvvd"> </h2>
+<h2 id="mcetoc_1dipcidvve">routes folder</h2>
+<p>inside routes folder there is subfolders with <code>camelCase</code> and singuler names which contains relative .js files</p>
+<h2 id="mcetoc_1dipcidvvf"> </h2>
+<h2 id="mcetoc_1dipcidvvg">middlewares</h2>
+<p>two folders exist <code>validators</code> and <code>autherizers</code> which act as middlewares and contains same style subfolders as routes folder</p>
+<h2 id="mcetoc_1dipcidvvh"> </h2>
+<h2 id="mcetoc_1dipcidvvi">variable names</h2>
+<p><code>local variables</code> are named in <code>camelCase</code> <code>global variables</code> are named in <code>camelCase</code></p>
+<h2 id="mcetoc_1dipcidvvj"> </h2>
+<h2 id="mcetoc_1dipcidvvk">function names</h2>
+<p>functions are named in <code>camelCase</code></p>
+<h2 id="mcetoc_1dipcidvvl"> </h2>
+<h2 id="mcetoc_1dipcidvvm">validation json keywords</h2>
+<p>validation file must contain those keywords for CRUD maybe some extra keywords will be added to certain files</p>
+<ol>
+<li><code>fetch</code> which means get an array of requested resource</li>
+<li><code>fetchOne</code> means get an object representing a single resource</li>
+<li><code>insert</code> insert new resource validator</li>
+<li><code>update</code> update existing validators</li>
+</ol>
+<h2 id="mcetoc_1dipcidvvn"> </h2>
+<h2 id="mcetoc_1dipcidvvo">UI components</h2>
+<p>all components are required to have those as following</p>
+<ol>
+<li><code>initialState</code> functions which returns an object</li>
+<li><code>handleChanges</code> variable which holds handle state changes</li>
+<li>every function which calls an API should start with <code>request</code> for example <code>requestInventoryItems</code> and they should return an axios object</li>
+<li>every modal should expose a prop called <code>ready</code> and it will expose show modal function which toggles a modal like that <code>ready={(internalHandler) =&gt; {} }</code></li>
+</ol>
+            ]]>
+        </content>
+    </entry>
 </feed>
